@@ -1,0 +1,136 @@
+// Roadmap data – source of truth for all 6 phases
+export const PHASES = [
+  {
+    id: 'phase-1',
+    number: 1,
+    title: 'Python + Web Fundamentals',
+    period: 'Months 1–2',
+    months: [1, 2],
+    color: '#6366f1',
+    topics: [
+      { id: 'p1-python', name: 'Python Fundamentals', description: 'Variables, data types, control flow, functions, OOP, file I/O', why: 'Python is the lingua franca of AI/ML. Everything you do later builds on this.', example: 'Build a CLI todo-list app that reads/writes JSON files', phase: 1 },
+      { id: 'p1-git', name: 'Git & GitHub', description: 'Commits, branches, pull requests, .gitignore, GitHub Pages', why: 'Every professional project lives on Git. It\'s your public portfolio backbone.', example: 'Push your first project to GitHub with a clean README', phase: 1 },
+      { id: 'p1-html', name: 'HTML', description: 'Semantic elements, forms, accessibility basics, meta tags', why: 'The skeleton of every web page. Required for all frontend work.', example: 'Mark up a personal bio page with proper structure', phase: 1 },
+      { id: 'p1-css', name: 'CSS', description: 'Box model, Flexbox, Grid, variables, media queries, animations', why: 'Makes your projects look professional and responsive.', example: 'Style your bio page to look great on mobile and desktop', phase: 1 },
+      { id: 'p1-js', name: 'JavaScript Basics', description: 'DOM manipulation, events, async/await, fetch API, ES6+', why: 'Brings interactivity to web pages. Also used in Node.js backends.', example: 'Build a weather app using a free weather API', phase: 1 },
+      { id: 'p1-apis', name: 'APIs & HTTP', description: 'REST concepts, GET/POST/PUT/DELETE, status codes, headers, JSON', why: 'Modern apps are all API-driven. Understanding HTTP is fundamental.', example: 'Query OpenWeather API and display results in a webpage', phase: 1 },
+      { id: 'p1-json', name: 'JSON & Data Formats', description: 'Parsing, serializing, nested structures, error handling', why: 'JSON is the universal data exchange format between services.', example: 'Parse a JSON dataset and display it as a formatted table', phase: 1 },
+    ],
+  },
+  {
+    id: 'phase-2',
+    number: 2,
+    title: 'Machine Learning',
+    period: 'Months 3–4',
+    months: [3, 4],
+    color: '#8b5cf6',
+    topics: [
+      { id: 'p2-numpy', name: 'NumPy', description: 'Arrays, broadcasting, vectorization, linear algebra ops', why: 'The numerical engine behind every ML library.', example: 'Implement matrix multiplication from scratch, then compare with NumPy', phase: 2 },
+      { id: 'p2-pandas', name: 'Pandas', description: 'DataFrames, groupby, merge, pivot, missing data, indexing', why: 'The go-to tool for loading, cleaning and exploring tabular datasets.', example: 'Explore the Titanic dataset: clean nulls, find survival rates by class', phase: 2 },
+      { id: 'p2-viz', name: 'Data Visualization', description: 'Matplotlib, Seaborn basics – histograms, scatter, heatmaps', why: 'Insight without visualization is just numbers. Charts communicate findings.', example: 'Visualize correlation matrix of a housing dataset', phase: 2 },
+      { id: 'p2-stats', name: 'Statistics for ML', description: 'Mean/median/std, distributions, hypothesis testing, correlation', why: 'ML is applied statistics. Knowing when to trust your model requires this.', example: 'Analyse a dataset and write a 1-page statistical summary', phase: 2 },
+      { id: 'p2-preprocess', name: 'Data Preprocessing', description: 'Feature engineering, encoding, scaling, train/test split', why: 'Garbage in, garbage out. Preprocessing is 80% of real ML work.', example: 'Prepare the House Prices dataset for a Scikit-learn model', phase: 2 },
+      { id: 'p2-regression', name: 'Regression', description: 'Linear/polynomial regression, loss functions, gradient descent', why: 'Foundational supervised learning. Understanding it makes all ML click.', example: 'Predict house prices with Linear Regression, evaluate with RMSE', phase: 2 },
+      { id: 'p2-classification', name: 'Classification', description: 'Logistic regression, decision trees, random forests, SVM, KNN', why: 'Most real-world ML problems are classification tasks.', example: 'Build a spam classifier on the SMS Spam Collection dataset', phase: 2 },
+      { id: 'p2-clustering', name: 'Clustering', description: 'K-Means, DBSCAN, hierarchical clustering, elbow method', why: 'Unsupervised learning reveals hidden patterns without labels.', example: 'Cluster customer segments in a retail dataset', phase: 2 },
+      { id: 'p2-eval', name: 'Model Evaluation', description: 'Accuracy, precision, recall, F1, ROC-AUC, cross-validation', why: 'A model is only as useful as its evaluation is honest.', example: 'Compare 3 classifiers on the same dataset using cross-validation', phase: 2 },
+    ],
+  },
+  {
+    id: 'phase-3',
+    number: 3,
+    title: 'Deep Learning + Generative AI',
+    period: 'Months 5–6',
+    months: [5, 6],
+    color: '#a855f7',
+    topics: [
+      { id: 'p3-nn', name: 'Neural Networks', description: 'Perceptrons, activation functions, backpropagation, optimisers', why: 'The foundation of everything in modern AI including GPT and image models.', example: 'Build an MNIST digit classifier from scratch in pure NumPy', phase: 3 },
+      { id: 'p3-pytorch', name: 'PyTorch', description: 'Tensors, autograd, nn.Module, DataLoader, training loop', why: 'Industry-standard deep learning framework used by most AI researchers.', example: 'Reimplement your MNIST classifier in PyTorch', phase: 3 },
+      { id: 'p3-cnn', name: 'CNN Basics', description: 'Convolutions, pooling, filters, transfer learning, ResNet', why: 'CNNs power image recognition, object detection, and generative models.', example: 'Fine-tune ResNet-18 to classify 5 custom image categories', phase: 3 },
+      { id: 'p3-transformers', name: 'Transformers', description: 'Attention mechanism, multi-head attention, positional encoding', why: 'The architecture behind GPT, BERT, Whisper, DALL-E – everything.', example: 'Read and annotate "Attention Is All You Need" paper', phase: 3 },
+      { id: 'p3-embeddings', name: 'Embeddings & Vector Search', description: 'Word2Vec, sentence transformers, cosine similarity, FAISS', why: 'Embeddings power semantic search, recommendations, and RAG systems.', example: 'Build a semantic FAQ search using sentence-transformers + FAISS', phase: 3 },
+      { id: 'p3-llm', name: 'LLM Concepts', description: 'Tokenization, temperature, prompting, fine-tuning, LoRA', why: 'Understanding LLMs lets you build products on top of GPT/Claude/Gemini.', example: 'Experiment with system prompts to build a custom tutor', phase: 3 },
+      { id: 'p3-aiapi', name: 'AI APIs', description: 'OpenAI API, Gemini API, rate limits, token budgets, streaming', why: 'Using APIs is the fastest way to ship AI products in 2025.', example: 'Build a multi-turn chatbot using the OpenAI API with streaming', phase: 3 },
+      { id: 'p3-rag', name: 'RAG Systems', description: 'Retrieval-Augmented Generation, chunking, vector DBs, pipelines', why: 'RAG is how you give LLMs access to your own data. Extremely marketable.', example: 'Build a RAG system over your notes with LangChain + ChromaDB', phase: 3 },
+    ],
+  },
+  {
+    id: 'phase-4',
+    number: 4,
+    title: 'Full-Stack AI Development',
+    period: 'Months 7–8',
+    months: [7, 8],
+    color: '#ec4899',
+    topics: [
+      { id: 'p4-react', name: 'React', description: 'Components, hooks, state, props, React Router, Context API', why: 'The most popular frontend library. Essential for building AI-powered UIs.', example: 'Build this app\'s dashboard in React from scratch', phase: 4 },
+      { id: 'p4-backend', name: 'Backend Concepts', description: 'HTTP servers, routing, middleware, REST API design', why: 'Full-stack means understanding both sides. Backend is where logic lives.', example: 'Design a REST API spec for the AI Language Tutor backend', phase: 4 },
+      { id: 'p4-fastapi', name: 'FastAPI', description: 'Routes, Pydantic models, dependency injection, async, docs', why: 'FastAPI is Python-native, blazing fast, and perfect for AI backends.', example: 'Build a /predict endpoint that serves your ML model', phase: 4 },
+      { id: 'p4-db', name: 'Database Basics', description: 'SQL fundamentals, PostgreSQL, SQLite, ORM basics (SQLAlchemy)', why: 'Every serious app needs persistent, queryable storage.', example: 'Store user sessions and conversation history in SQLite', phase: 4 },
+      { id: 'p4-auth', name: 'Authentication', description: 'JWT tokens, OAuth basics, password hashing, protected routes', why: 'Security is non-negotiable for any production application.', example: 'Add login/logout to your FastAPI app with JWT', phase: 4 },
+      { id: 'p4-aiint', name: 'AI Integration', description: 'Connecting LLM APIs to your backend, streaming responses, caching', why: 'This is the skill that makes you a full-stack AI developer, not just a coder.', example: 'Stream AI responses from FastAPI to React in real-time', phase: 4 },
+      { id: 'p4-deploy', name: 'Deployment', description: 'Docker basics, Render/Railway, Vercel/Netlify, env variables, CI', why: 'An undeployed project is invisible. Deployment turns code into products.', example: 'Deploy your FastAPI + React app to Render + Vercel', phase: 4 },
+    ],
+  },
+  {
+    id: 'phase-5',
+    number: 5,
+    title: 'Major AI Project',
+    period: 'Months 9–10',
+    months: [9, 10],
+    color: '#f59e0b',
+    topics: [
+      { id: 'p5-planning', name: 'Project Planning', description: 'Requirements, tech stack choice, ERD, wireframes, milestones', why: 'Planning prevents painful rewrites. 30 minutes of planning saves 30 hours of coding.', example: 'Write a 1-page spec for your major project', phase: 5 },
+      { id: 'p5-frontend', name: 'Frontend Development', description: 'React UI, component design, routing, state management, forms', why: 'The frontend is what users see. It must be fast, clear, and responsive.', example: 'Build all core UI screens before connecting the backend', phase: 5 },
+      { id: 'p5-backend', name: 'Backend Development', description: 'FastAPI routes, business logic, error handling, validation', why: 'The backend is the brain. Solid architecture makes future features easy.', example: 'Implement all API endpoints with proper status codes', phase: 5 },
+      { id: 'p5-database', name: 'Database Design', description: 'Schema design, migrations, indexing, query optimisation', why: 'Bad data models cause technical debt that\'s nearly impossible to fix later.', example: 'Design the schema, run migrations, seed test data', phase: 5 },
+      { id: 'p5-ai', name: 'AI Feature Integration', description: 'LLM integration, prompt engineering, embedding search, fine-tuning', why: 'This is the differentiator – what makes your project an AI project.', example: 'Integrate the core AI feature end-to-end', phase: 5 },
+      { id: 'p5-testing', name: 'Testing', description: 'Unit tests, integration tests, manual QA checklist', why: 'Tests prevent regressions and prove your code works to employers.', example: 'Write tests for all critical API routes and utility functions', phase: 5 },
+      { id: 'p5-deployment', name: 'Deployment', description: 'Production deploy, domain, SSL, monitoring, secrets management', why: 'A live URL is 10× more impressive than a GitHub repo.', example: 'Get your project live at a real .com or subdomain', phase: 5 },
+      { id: 'p5-docs', name: 'Documentation', description: 'README, API docs, architecture diagram, video walkthrough', why: 'Documentation is how employers and collaborators understand your work.', example: 'Record a 3-minute demo video and embed it in the README', phase: 5 },
+    ],
+  },
+  {
+    id: 'phase-6',
+    number: 6,
+    title: 'Portfolio + Career + Content',
+    period: 'Months 11–12',
+    months: [11, 12],
+    color: '#10b981',
+    topics: [
+      { id: 'p6-github', name: 'GitHub Profile', description: 'Pinned repos, profile README, contribution graph, open source', why: 'GitHub is your portfolio. Recruiters check it before the interview.', example: 'Build a standout GitHub profile README with stats', phase: 6 },
+      { id: 'p6-portfolio', name: 'Portfolio Website', description: 'Personal site with projects, about, blog, contact', why: 'Your portfolio is your business card. It shows you can build and present.', example: 'Deploy your portfolio to a custom domain', phase: 6 },
+      { id: 'p6-resume', name: 'Resume', description: 'ATS-friendly format, quantified achievements, skills section', why: 'The resume gets you the interview. Everything else gets you the job.', example: 'Get your resume reviewed by 3 people and iterate', phase: 6 },
+      { id: 'p6-presentation', name: 'Project Presentation', description: 'Demo scripts, STAR format, technical explanation for non-devs', why: 'If you can\'t explain your project, you can\'t impress in interviews.', example: 'Record a 5-minute polished project walkthrough', phase: 6 },
+      { id: 'p6-interview', name: 'Interview Preparation', description: 'LeetCode Easy/Medium, system design basics, behavioural questions', why: 'Knowing the material isn\'t enough if you freeze in interviews.', example: 'Solve 30 LeetCode Easy problems in 2 weeks', phase: 6 },
+      { id: 'p6-internship', name: 'Internship Preparation', description: 'Application strategy, cold outreach, referrals, LinkedIn', why: 'The job search is itself a skill. Strategy beats luck.', example: 'Apply to 20 internships using a structured tracking sheet', phase: 6 },
+      { id: 'p6-freelance', name: 'Freelancing Prep', description: 'Upwork/Fiverr profile, portfolio pitch, rate setting, proposals', why: 'Freelancing gives income independence while you build experience.', example: 'Create a Fiverr gig and win your first client', phase: 6 },
+      { id: 'p6-youtube', name: 'YouTube Channel', description: 'Niche, content plan, recording setup, SEO, thumbnails', why: 'Teaching accelerates your own learning and builds an audience.', example: 'Publish your first 3 videos and analyse watch time', phase: 6 },
+      { id: 'p6-instagram', name: 'Instagram Growth', description: 'Content calendar, reels, carousels, coding tips, behind-the-scenes', why: 'Instagram gives you reach with a different audience than YouTube.', example: 'Post 30 times in 30 days using a template system', phase: 6 },
+    ],
+  },
+];
+
+export const ALL_TOPICS = PHASES.flatMap(p => p.topics);
+
+export const DEFAULT_PROJECTS = [
+  {
+    id: 'proj-1',
+    name: 'AI Language Tutor',
+    description: 'An AI-powered web app that helps users learn a new language through interactive conversation, grammar correction, and vocabulary exercises.',
+    technology: 'React, FastAPI, OpenAI API, Python',
+    status: 'Building',
+    progress: 25,
+    githubUrl: '',
+    liveUrl: '',
+    learned: 'API integration patterns, prompt engineering for language tasks',
+    problems: 'Streaming responses need careful state management in React',
+    nextStep: 'Complete the vocabulary flashcard component',
+    phase: 'Phase 3-4',
+    createdAt: new Date().toISOString(),
+  },
+];
+
+export const TOPIC_STATUSES = ['Not Started', 'In Progress', 'Completed'];
+export const PROJECT_STATUSES = ['Idea', 'Planning', 'Building', 'Testing', 'Completed'];
+export const CONTENT_STATUSES = ['Idea', 'Planned', 'Creating', 'Published'];
+export const PLATFORMS = ['YouTube', 'Instagram'];
